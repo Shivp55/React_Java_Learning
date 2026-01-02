@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React Test</title>
+</head>
+<body>
+
+    <h1>I am a super heading</h1>
+
+    <div id="root"></div>
+
+    <h1>I am a super footer</h1>
+
+    <!-- React -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+        const nestedElement = (
+            <div id="parent">
+                <div id="child1">
+                    <h1 style={{ color: "blue" }}>Hi, I am Bob the Builder!</h1>
+                    <h2>I can fix it!</h2>
+                </div>
+                <div id="child2">
+                    <h1 style={{ color: "orange" }}>Hi, I am Dora the Explorer!</h1>
+                    <h2>Let's go exploring</h2>
+                </div>
+            </div>
+        );
+
+        const NestedFunction=() => (
+            <div id="parent">
+                <div id="child1">
+                    <h1 style={{ color: "blue" }}>Hi, I am Bob the Builder!</h1>
+                    <h2>I can fix it!</h2>
+                </div>
+                <div id="child2">
+                    <h1 style={{ color: "orange" }}>Hi, I am Dora the Explorer!</h1>
+                    <h2>Let's go exploring</h2>
+                </div>
+            </div>
+        );
+
+        function PlainFunction() {
+            return (
+            <div id="parent">
+                <div id="child1">
+                    <h1 style={{ color: "blue" }}>Hi, I am Bob the Builder!</h1>
+                    <h2>I can fix it!</h2>
+                </div>
+                <div id="child2">
+                    <h1 style={{ color: "orange" }}>Hi, I am Dora the Explorer!</h1>
+                    <h2>Let's go exploring</h2>
+                </div>
+            </div>
+        );
+        } 
+
+        const root = ReactDOM.createRoot(document.getElementById("root"));
+        root.render(<NestedFunction/>);
+    </script>
+
+</body>
+</html>
