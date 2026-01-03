@@ -13,7 +13,7 @@ export default function Home() {
     //Mounting is the process of creating and adding the component into the DOM
     useEffect(() => {
         fetchProducts();
-    }, []); //lets you synchronize a component with an external system
+},[]); //lets you synchronize a component with an external system
     const fetchProducts = async () => {
         try {
             setLoading(true);

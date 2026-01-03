@@ -2,10 +2,6 @@ import React from 'react'
 
 export default function SearchBox({ label, placeholder, value, handleSearch }) {
 
-    function handleSearch(event){
-        console.log(event);
-    }
-
     return (
         <div className='flex items-center gap-3  pl-4 flex-1 font-primary'>
             <label className='text-lg font-semibold text-primary'>{label}</label>
