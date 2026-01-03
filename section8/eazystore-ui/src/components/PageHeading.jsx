@@ -6,7 +6,7 @@ export default function PageHeading({title,children}) {
     return (
         <div className="text-center max-w-xl mx-auto px-4 py-6 ">
             <PageTitle title={title}/>
-            <p className="font-primary text-gray-600 leading-6 ">
+            <p className="font-primary text-gray-600 leading-6 dark:text-light">
                 {children}  
             </p>
         </div>

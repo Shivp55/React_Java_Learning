@@ -7,5 +7,5 @@ import React from "react"
 
 //Using destructuring
 export default function PageTitle({title}){  //using destructuring instead of writing props , use directly the key
-    return <h1 className="text-3xl font-primary font-extrabold text-center text-primary mt-4 py-2">{title}</h1>
+    return <h1 className="text-4xl font-primary font-extrabold text-center text-primary mt-4 py-2 dark:text-light">{title}</h1>
 }
