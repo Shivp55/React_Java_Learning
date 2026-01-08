@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JpaBuddyIdeaProjectConfig" newRepositoryParent="org.springframework.data.jpa.repository.JpaRepository">
+    <option name="reLastEntityCreationPackage" value="src/main/java/com/eazybytes/eazystore/entity" />
+    <option name="reverseEngineeringLastDbConnectionId" value="d5dfe334-2acf-4bef-83fc-3f9751d957a8" />
+  </component>
+</project>
